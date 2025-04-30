@@ -61,7 +61,7 @@ async function run() {
     });
 
     // User Login
-    app.post("/api/v1/login", verifyToken, async (req, res) => {
+    app.post("/api/v1/login", async (req, res) => {
       const { email, password } = req.body;
 
       // Find user by email
